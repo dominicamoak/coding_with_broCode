@@ -8,13 +8,24 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <h1 id="header"></h1>
+        <div class="converterContainer">
+            <h1 class="header"> Temperature Converter </h1>
 
-        <section class="buttons">
-            <button class="btn" id="decrease"> Decrease </button>
-            <button class="btn" id="reset"> Reset </button>
-            <button class="btn" id="increase"> Increase </button>
-        </section>
+            <div class="mainContainer">
+                <input type="text" id="userTemp" class="userTemp">
+
+                <section class="radioBtns">
+                    <input type="radio" name="tempUnit" id="toFahrenheit">
+                    <label for="toFahrenheit"> Celcius → Fahrenheit </label> <br>
+                    <input type="radio" name="tempUnit" id="toCelcius">
+                    <label for="toCelcius"> Fahrenheit → Celcius </label>
+                </section>
+
+                <button id="submitBtn" class="submitBtn"> Submit </button>
+            </div>
+
+            <p id="result" class="result"></p>
+        </div>
 
         <script src="index.js"></script>
     </body>
