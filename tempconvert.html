@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>With Mosh - JavaScript</title>
+        <link rel="stylesheet" href="tempconvert.css"/>
+    </head>
+    <body>
+        <div class="converterContainer">
+            <h1 class="header"> Temperature Converter </h1>
+
+            <div class="mainContainer">
+                <input type="text" id="userTemp" class="userTemp">
+
+                <section class="radioBtns">
+                    <input type="radio" name="tempUnit" id="toFahrenheit">
+                    <label for="toFahrenheit"> Celcius → Fahrenheit </label> <br>
+                    <input type="radio" name="tempUnit" id="toCelcius">
+                    <label for="toCelcius"> Fahrenheit → Celcius </label>
+                </section>
+
+                <button id="submitBtn" class="submitBtn"> Submit </button>
+            </div>
+
+            <p id="result" class="result"></p>
+        </div>
+
+        <script src="tempconvert.js"></script>
+    </body>
+</html>
