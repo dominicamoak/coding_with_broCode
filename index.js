@@ -1,24 +1,16 @@
 
 
-const rollDiceBtn = document.getElementById("rollDiceBtn");
+let fruits = ["mango", "banana", "orange", "apple", "pear"];
 
-function rollDice() {
-    const numOfDice = document.getElementById("numOfDice").value;
-    const diceResult = document.getElementById("diceResult");
-    const diceImages = document.getElementById("diceImages");
-    const values = [];
-    const images = [];
+fruits.forEach(capitalize);
+fruits.forEach(displayFruits);
 
-    for (let i=0; i<numOfDice; i++) {
-        const pick = Math.floor(Math.random() * 6) + 1;
-        values.push(pick);
-        images.push(`<img src="dice_images/${pick}.png" alt="Dice ${pick}">`);
-    }
-
-    diceResult.textContent = `Rolled dice: ${values.join(", ")}`;
-    diceImages.innerHTML = images.join(" ");
+function capitalize(element, index, array) {
+    array[index] = element.slice(0, 1).toUpperCase() + element.slice(1);
 }
 
-rollDiceBtn.addEventListener("click", rollDice);
+function displayFruits(fruit) {
+    console.log(fruit)
+}
 
 
