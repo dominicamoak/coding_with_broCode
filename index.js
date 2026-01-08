@@ -1,16 +1,22 @@
 
 
-let fruits = ["mango", "banana", "orange", "apple", "pear"];
-
-fruits.forEach(capitalize);
-fruits.forEach(displayFruits);
-
-function capitalize(element, index, array) {
-    array[index] = element.slice(0, 1).toUpperCase() + element.slice(1);
+const person1 = {
+    name: "Chris",
+    age: 24,
+    favFood: "Pasta",
+    sayHello: function() {console.log("Hello Everyone!")},
+    eat: function() {console.log(`${this.name} eats ${this.favFood}`)}
 }
 
-function displayFruits(fruit) {
-    console.log(fruit)
+const person2 = {
+    name: "Prince",
+    age: 28,
+    favFood: "Rice",
+    sayHello: function() {console.log("Hello Everyone!")},
+    eat: function() {console.log(`${this.name} eats ${this.favFood}`)}
 }
+
+person1.eat();
+person2.eat();
 
 
