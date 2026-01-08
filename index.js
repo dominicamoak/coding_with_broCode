@@ -1,22 +1,28 @@
 
 
-const person1 = {
-    name: "Chris",
-    age: 24,
-    favFood: "Pasta",
-    sayHello: function() {console.log("Hello Everyone!")},
-    eat: function() {console.log(`${this.name} eats ${this.favFood}`)}
+class Person {
+    constructor(name, job, role) {
+        this.name = name;
+        this.job = job;
+        this.role = role;
+    }
+
+    workplace() {
+        console.log(`${this.name} works at ${this.job}`);
+    }
+
+    jobRole() {
+        console.log(`${this.name} is a ${this.role}`);
+    }
 }
 
-const person2 = {
-    name: "Prince",
-    age: 28,
-    favFood: "Rice",
-    sayHello: function() {console.log("Hello Everyone!")},
-    eat: function() {console.log(`${this.name} eats ${this.favFood}`)}
-}
+const person1 = new Person("Chris", "Google", "Software Engineer");
+const person2 = new Person("Prince", "Amazon", "Data Analyst");
 
-person1.eat();
-person2.eat();
+person1.workplace();
+person1.jobRole();
+
+person2.workplace();
+person2.jobRole();
 
 
