@@ -20,7 +20,7 @@ class Person {
     }
 
     set age(newAge) {
-        if (typeof newAge === "string") {
+        if (typeof newAge === "string" || typeof newAge === "boolean") {
             console.error("Age has to be a number")
         } else if (newAge >= 0) {
             this._age = newAge;
@@ -31,6 +31,10 @@ class Person {
 
     get age() {
         return this._age;
+    }
+
+    get jobTitle() {
+        return `${this.role} at ${this.job}`;
     }
 }
 
@@ -44,6 +48,7 @@ person2.workplace();
 person2.jobRole();
 
 console.log(`Employees: ${Person.employees}`);
-console.log(person1.age);
+console.log(person1.jobTitle);
+console.log(person2.jobTitle);
 
 
