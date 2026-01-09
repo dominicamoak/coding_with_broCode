@@ -12,13 +12,25 @@ const students = [
 const studentNames = students.map(student => student.name)
 console.log(studentNames);
 
+const studentGrades = students.map(student => student.grade);
+console.log(studentGrades);
+
+
 // .filter
 const goodGrades = students.filter(student => student.grade >= 75);
 console.log(goodGrades);
 
+const studentStatus = students.filter(student => student.isStudent !== true);
+console.log(studentStatus);
+
+
 // .reduce
 const bestStudent = students.reduce((top, mark) => mark.grade > top.grade ? mark : top);
 console.log(bestStudent);
+
+const badStudent = students.reduce((low, mark) => mark.grade < low.grade ? mark : low);
+console.log(badStudent);
+
 
 // forEach
 students.forEach(student => console.log(student.grade - 5));
