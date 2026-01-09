@@ -32,6 +32,13 @@ const badStudent = students.reduce((low, mark) => mark.grade < low.grade ? mark 
 console.log(badStudent);
 
 
-// forEach
+// .forEach
 students.forEach(student => console.log(student.grade - 5));
 
+
+// .sort
+const newStudents = students.sort((a, b) => a.name.localeCompare(b.name));
+console.log(newStudents);
+
+const bestToLowGrades = students.sort((a, b) => b.grade - a.grade);
+console.log(bestToLowGrades);
