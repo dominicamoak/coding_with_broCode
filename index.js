@@ -1,54 +1,25 @@
 
 
-class Person {
-    static employees = 0;
+const students = [
+    {name: "Chris", age: 23, isStudent: true, grade: 79},
+    {name: "Prince", age: 19, isStudent: true, grade: 75},
+    {name: "Evans", age: 25, isStudent: false, grade: 92},
+    {name: "Patrick", age: 21, isStudent: true, grade: 84},
+    {name: "Elvis", age: 18, isStudent: true, grade: 67}
+]
 
-    constructor(name, age, job, role) {
-        this.name = name;
-        this.age = age;
-        this.job = job;
-        this.role = role;
-        Person.employees++;
-    }
+// .map
+const studentNames = students.map(student => student.name)
+console.log(studentNames);
 
-    workplace() {
-        console.log(`${this.name} is ${this.age} years old and works at ${this.job}`);
-    }
+// .filter
+const goodGrades = students.filter(student => student.grade >= 75);
+console.log(goodGrades);
 
-    jobRole() {
-        console.log(`${this.name} is a ${this.role}`);
-    }
+// .reduce
+const bestStudent = students.reduce((top, mark) => mark.grade > top.grade ? mark : top);
+console.log(bestStudent);
 
-    set age(newAge) {
-        if (typeof newAge === "string" || typeof newAge === "boolean") {
-            console.error("Age has to be a number")
-        } else if (newAge >= 0) {
-            this._age = newAge;
-        } else {
-            console.error("Age cannot be less than 0");
-        }
-    }
-
-    get age() {
-        return this._age;
-    }
-
-    get jobTitle() {
-        return `${this.role} at ${this.job}`;
-    }
-}
-
-const person1 = new Person("Chris", 43, "Google", "Software Engineer");
-const person2 = new Person("Prince", 35, "Amazon", "Data Analyst");
-
-person1.workplace();
-person1.jobRole();
-
-person2.workplace();
-person2.jobRole();
-
-console.log(`Employees: ${Person.employees}`);
-console.log(person1.jobTitle);
-console.log(person2.jobTitle);
-
+// forEach
+students.forEach(student => console.log(student.grade - 5));
 
