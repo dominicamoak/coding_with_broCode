@@ -1,8 +1,25 @@
 
 body {
     font-family: Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url(clock_images/background_city.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
+#clock {
+    color: white;
+    font-size: 6rem;
+    backdrop-filter: blur(5px);
+    background-color: hsla(0, 0%, 100%, 0.107);
+    width: 100vw;
+    text-align: center;
+}
 
