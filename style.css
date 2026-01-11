@@ -1,25 +1,83 @@
 
 body {
-    font-family: Helvetica, sans-serif;
-    background-image: url(clock_images/background_city.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    font-family: 'Orbitron', sans-serif;
+    background-color: white;
 }
 
 #container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
+#header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+#clock-container {
+    border: 4px solid black;
+    border-radius: 10px;
+    width: 30vw;
+    height: 15vh;
+    padding: 20px;
+    background-color: beige;
+}
+
 #clock {
-    color: white;
-    font-size: 6rem;
-    backdrop-filter: blur(5px);
-    background-color: hsla(0, 0%, 100%, 0.107);
-    width: 100vw;
+    color: black;
+    font-size: 3rem;
     text-align: center;
 }
+
+/* green red blue */
+#btn-container {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#startBtn,
+#stopBtn,
+#resetBtn {
+    width: 100px;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin: 20px 5px;
+}
+
+#startBtn {
+    background-color: hsl(120, 84%, 51%);
+    transition: background-color 0.25s ease;
+}
+
+#stopBtn {
+    background-color: rgb(220, 63, 63);
+    transition: background-color 0.25s ease;
+}
+
+#resetBtn {
+    background-color: rgb(67, 67, 237);
+    transition: background-color 0.25s ease;
+}
+
+#startBtn:hover {
+    background-color: hsl(120, 54%, 25%);
+}
+
+#stopBtn:hover {
+    background-color: rgb(121, 39, 39);
+}
+
+#resetBtn:hover {
+    background-color: rgb(44, 44, 121);
+}
+
+
 
