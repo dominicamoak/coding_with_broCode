@@ -1,6 +1,6 @@
 
 try {
-    console.log(x);
+    console.log("x is a var");
 } catch(error) {
     console.error(error);
 } finally {
