@@ -17,13 +17,15 @@ body {
     width: 25rem;
     height: 5rem;
     background-color: hsl(222, 85%, 76%);
+    color: black;
     margin: 10px;
     padding: 5px;
+    border: 3px solid white;
     border-radius: 10px;
     font-size: 2rem;
 }
 
-#btns button {
+#btns-container button {
     background-color: hsl(34, 83%, 49%);
     color: white;
     font-size: 2rem;
@@ -34,7 +36,7 @@ body {
     margin: 5px;
 }
 
-#btns button:hover {
+#btns-container button:hover {
     background-color: hsl(34, 83%, 21%);
     color: white;
 }
