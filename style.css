@@ -1,10 +1,43 @@
 
 body {
     font-family: 'Orbitron', sans-serif;
-    background-color: hsl(222, 45%, 9%);
+    background-color: hsl(222, 52%, 85%);
 }
 
+#calculator {
+    background-color: hsl(222, 45%, 9%);
+    width: 27vw;
+    text-align: center;
+    margin: 10vh auto;
+    padding: 20px;
+    border-radius: 10px;
+}
 
+#display {
+    width: 25rem;
+    height: 5rem;
+    background-color: hsl(222, 85%, 76%);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+#btns button {
+    background-color: hsl(34, 83%, 49%);
+    color: white;
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    transition: background-color 0.35s ease;
+    margin: 5px;
+}
+
+#btns button:hover {
+    background-color: hsl(34, 83%, 21%);
+    color: white;
+}
 
 
 
