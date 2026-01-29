@@ -31,7 +31,7 @@ nextSibling.style.backgroundColor = "green";
 // previousSibling using getElementById
 const vegetable = document.getElementById("onions");
 const previousSibling = vegetable.previousElementSibling;
-previousSibling.style.backgroundColor = "red";
+previousSibling.style.backgroundColor = "tomato";
 
 
 // parentElemnt using getElementById
