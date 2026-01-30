@@ -3,19 +3,33 @@ body {
     font-family: 'Orbitron', sans-serif;
     background-color: hsl(221, 11%, 29%);
     height: 100vh;
-    margin: 0;
-}
-
-#playBox {
-    width: 200px;
-    height: 200px;
-    background-color: hsl(240, 58%, 55%);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 100px;
-    border-radius: 10px;
-    position: relative;
+}
+
+#submitBtn {
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top : 20px;
+}
+
+#submitBtn:hover {
+    background-color: rgb(143, 141, 141);
+}
+
+#submitBtn:active {
+    background-color: rgb(199, 158, 158);
+}
+
+#myImg {
+    height: 500px;
+    width: 500px;
 }
 
 
