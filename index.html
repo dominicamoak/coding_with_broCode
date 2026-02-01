@@ -9,9 +9,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
     </head>
     <body>
+        <h1 id="gameName">Rock - Paper - Scissors</h1><br>
 
-        <img src="/clock_images/background_city.webp" alt="city skyline image" id="myImg"/>
-        <button id="submitBtn">Hide</button>
+        <div id="choiceBoard">
+            <img id="rock" src="/rock_paper_scissors/rock.png" alt="rock image">
+            <img id="paper" src="/rock_paper_scissors/paper.png" alt="paper image">
+            <img id="scissors" src="/rock_paper_scissors/scissors.png" alt="scissors image">
+        </div>
+
+        <div id="finalChoices">
+            <h3 id="playerChoice">Player: </h3>
+            <h3 id="computerChoice">Computer: </h3>
+        </div>
+
+        <h1 id="results">YOU WIN!</h1>
+
+        <div id="scoreBoard">
+            <h4 id="playerScore">Player Score: </h4>
+            <h4 id="computerScore">Computer Score: </h4>
+        </div>
 
         <script src="index.js"></script>
     </body>

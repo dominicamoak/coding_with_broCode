@@ -1,7 +1,7 @@
 
 body {
-    font-family: 'Orbitron', sans-serif;
-    background-color: hsl(221, 11%, 29%);
+    font-family: Arial, sans-serif;
+    background-color: hsl(221, 53%, 83%);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -9,27 +9,43 @@ body {
     align-items: center;
 }
 
-#submitBtn {
-    height: 50px;
-    width: 200px;
-    font-size: 30px;
+#gameName {
+    font-family: 'Orbitron', sans-serif;
     font-weight: bold;
+    font-size: 2.7rem;
+}
+
+#choiceBoard img {
+    width: 200px;
+    height: 200px;
+    background-color: darkgoldenrod;
+    border-radius: 10px;
     border: none;
-    border-radius: 5px;
-    margin-top : 20px;
+    margin: 0 10px;
 }
 
-#submitBtn:hover {
-    background-color: rgb(143, 141, 141);
+#choiceBoard img:hover {
+    border: 5px solid white;
 }
 
-#submitBtn:active {
-    background-color: rgb(199, 158, 158);
+#choiceBoard img:active {
+    background-color: hsl(43, 89%, 70%);
 }
 
-#myImg {
-    height: 500px;
-    width: 500px;
+#finalChoices h3 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+#results {
+    font-size: 3.7rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#scoreBoard h4 {
+    font-size: 1.5rem;
+    margin: 10px 0;
 }
 
 
