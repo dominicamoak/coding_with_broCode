@@ -57,6 +57,26 @@ body {
     margin: 10px 0;
 }
 
+#endGame {
+    width: 150px;
+    height: 60px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: darkgoldenrod;
+    transition: background-color 0.3s ease;
+}
+
+#endGame:hover {
+    background-color: hsl(43, 89%, 70%);
+}
+
+#endGame:active {
+    border: 2px solid black;
+}
+
 
 
 
