@@ -104,6 +104,14 @@ choiceBoard.addEventListener("click", (event) => {
         }
 
         results.style.visibility = "visible";
+
+        if (results.textContent === "YOU WIN!") {
+            results.style.color = "green";
+        } else if (results.textContent === "YOU LOSE!") {
+            results.style.color = "red";
+        } else {
+            results.style.color = "black";
+        }
     }
 
     winningLogic();
