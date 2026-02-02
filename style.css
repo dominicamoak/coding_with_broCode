@@ -3,79 +3,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: hsl(221, 53%, 83%);
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-#gameName {
-    font-family: 'Orbitron', sans-serif;
-    font-weight: bold;
-    font-size: 2.7rem;
-    margin: 0;
-}
 
-#choiceBoard {
-    padding: 0;
-}
-
-#choiceBoard img {
-    width: 200px;
-    height: 200px;
-    background-color: darkgoldenrod;
-    border-radius: 10px;
-    border: none;
-    margin: 0 10px;
-    transition: border 0.3s ease;
-}
-
-#choiceBoard img:hover {
-    border: 5px solid white;
-}
-
-#choiceBoard img:active {
-    background-color: hsl(43, 89%, 70%);
-    scale: 1.1;
-    transition: scale 0.3s ease;
-}
-
-#finalChoices h3 {
-    font-size: 1.8rem;
-    margin: 10px 0;
-}
-
-#results {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 3.7rem;
-    font-weight: bold;
-    margin: 20px 0;
-}
-
-#scoreBoard h4 {
-    font-size: 1.5rem;
-    margin: 10px 0;
-}
-
-#endGame {
-    width: 150px;
-    height: 60px;
-    margin-top: 50px;
-    border: none;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: darkgoldenrod;
-    transition: background-color 0.3s ease;
-}
-
-#endGame:hover {
-    background-color: hsl(43, 89%, 70%);
-}
-
-#endGame:active {
-    border: 2px solid black;
-}
 
 
 
