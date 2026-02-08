@@ -1,17 +1,44 @@
 
-const imageContainer = document.getElementById("imageContainer");
 const previousBtn = document.getElementById("previousBtn");
 const nextBtn = document.getElementById("nextBtn");
 
-const imagesURL = "/slider";
-let imagesArray = [];
-const imageIndex = 3;
+const slides = document.querySelectorAll(".sliderImages img");
+let slideIndex = 0;
+let intervalId = null;
 
-let image = document.createElement("img");
-image.src = `/slider/${imageIndex}.jpg`;
+document.addEventListener("DOMContentLoaded", initialize);
+nextBtn.addEventListener("click", nextSlide);
+previousBtn.addEventListener("click", previousSlide);
 
-imageContainer.appendChild(image);
+function initialize() {
+    if (slides.length > 0) {
+        slides[slideIndex].classList.add("currentSlide");
+        intervalId = setInterval(nextSlide, 3000);
+    }
+}
 
+function displaySlide(index) {
+    if (index >= slides.length) {
+        slideIndex = 0;
+    } else if (index < 0) {
+        slideIndex = slides.length - 1;
+    }
+    slides.forEach(slide => {
+        slide.classList.remove("currentSlide");
+    });
+    slides[slideIndex].classList.add("currentSlide");
+}
+
+function nextSlide() {
+    slideIndex++;
+    displaySlide(slideIndex);
+}
+
+function previousSlide() {
+    clearInterval(intervalId);
+    slideIndex--;
+    displaySlide(slideIndex);
+}
 
 
 
