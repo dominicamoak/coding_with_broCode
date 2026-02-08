@@ -2,6 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: hsl(221, 53%, 83%);
+    margin: 0;
 }
 
 #imageContainer {
@@ -12,17 +13,17 @@ body {
 }
 
 .imageContainer button {
-    width: 60px;
-    height: 40px;
+    width: 40px;
+    height: 100px;
     font-weight: bold;
     color: white;
     background-color: hsla(0, 0%, 0%, 0.4);
     border: none;
     border-radius: 5px;
-    /*transition: background-color 0.3s ease;*/
     position: absolute;
     top: 50%;
     transform : translateY(-50);
+    text-align: center;
 }
 
 #imageContainer button:hover {
@@ -30,7 +31,7 @@ body {
 }
 
 #imageContainer button:active {
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 30%);
 }
 
 .imageContainer .nextBtn {

@@ -13,7 +13,7 @@ previousBtn.addEventListener("click", previousSlide);
 function initialize() {
     if (slides.length > 0) {
         slides[slideIndex].classList.add("currentSlide");
-        intervalId = setInterval(nextSlide, 3000);
+        autoInterval();
     }
 }
 
@@ -32,12 +32,18 @@ function displaySlide(index) {
 function nextSlide() {
     slideIndex++;
     displaySlide(slideIndex);
+    autoInterval();
 }
 
 function previousSlide() {
     clearInterval(intervalId);
     slideIndex--;
     displaySlide(slideIndex);
+}
+
+function autoInterval() {
+    clearInterval(intervalId);
+    intervalId = setInterval(nextSlide, 3000);
 }
 
 
