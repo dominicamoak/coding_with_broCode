@@ -1,0 +1,67 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(221, 53%, 83%);
+    margin: 0;
+}
+
+#imageContainer {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.imageContainer button {
+    width: 40px;
+    height: 100px;
+    font-weight: bold;
+    color: white;
+    background-color: hsla(0, 0%, 0%, 0.4);
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform : translateY(-50);
+    text-align: center;
+}
+
+#imageContainer button:hover {
+    background-color: hsl(0, 0%, 0%, 0.7);
+}
+
+#imageContainer button:active {
+    background-color: hsl(0, 0%, 30%);
+}
+
+.imageContainer .nextBtn {
+    right: 0;
+}
+
+.imageContainer .previousBtn {
+    left: 0;
+}
+
+.sliderImages img {
+    width: 100%;
+    display: none;
+}
+
+#sliderImages .currentSlide {
+    display: block;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
